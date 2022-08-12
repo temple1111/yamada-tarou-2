@@ -25,7 +25,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === XYM_ID) {
         const dom_xym = document.getElementById('wallet-xym')
-        dom_xym.innerText = `TEMPLE.moter ポイント : ${m.amount.compact() / Math.pow(10, 6)}`
+        dom_xym.innerText = `TEMPLE ポイント : ${m.amount.compact() / Math.pow(10, 6)}`
       }
     }
   })
